@@ -1,0 +1,55 @@
+.about {
+  padding: 34px 22px 26px;
+  background: #ffffff;
+}
+
+.kicker {
+  margin: 0 0 8px;
+  color: var(--color-green-700);
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.about h2 {
+  margin: 0 0 14px;
+  color: var(--color-green-900);
+  font-size: 24px;
+  line-height: 1.35;
+  letter-spacing: 0;
+}
+
+.about p:last-child {
+  margin: 0;
+  color: var(--color-muted);
+  font-size: 14px;
+  line-height: 1.9;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .about {
+    padding: 52px 56px 42px;
+  }
+
+  .about h2 {
+    font-size: 30px;
+  }
+
+  .about p:last-child {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .about {
+    padding: 64px 72px 54px;
+  }
+
+  .about h2 {
+    font-size: 34px;
+  }
+
+  .about p:last-child {
+    max-width: 760px;
+    font-size: 16px;
+  }
+}
