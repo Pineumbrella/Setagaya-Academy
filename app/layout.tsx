@@ -1,0 +1,26 @@
+import type { Metadata, Viewport } from "next";
+import "./globals.css";
+
+export const metadata: Metadata = {
+  title: "世田谷アカデミー | 梅ヶ丘駅徒歩2分の個別指導塾",
+  description:
+    "世田谷アカデミーは梅ヶ丘駅から徒歩2分。小学生・中学生・高校生に寄り添う個別指導の学習塾です。",
+};
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 1,
+};
+
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
+  return (
+    <html lang="ja">
+      <body>{children}</body>
+    </html>
+  );
+}

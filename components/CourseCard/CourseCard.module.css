@@ -1,0 +1,59 @@
+.card {
+  padding: 20px 18px;
+  border-radius: 8px;
+  background: linear-gradient(180deg, #f5fbf7 0%, #ffffff 100%);
+  border: 1px solid var(--color-line);
+}
+
+.lead {
+  margin: 0 0 4px;
+  color: var(--color-green-700);
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.card h3 {
+  margin: 0 0 14px;
+  color: var(--color-ink);
+  font-size: 20px;
+  letter-spacing: 0;
+}
+
+.card ul {
+  display: grid;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.card li {
+  position: relative;
+  padding-left: 18px;
+  color: var(--color-muted);
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.card li::before {
+  position: absolute;
+  left: 0;
+  top: 0.58em;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--color-green-600);
+  content: "";
+}
+
+@media (min-width: 768px) {
+  .card {
+    padding: 24px 22px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .card {
+    min-height: 250px;
+  }
+}
